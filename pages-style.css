@@ -283,12 +283,13 @@ h1{
 
 .logo img{
     text-align:center;
-    width:50%;
-    height:500px;
+    width:20%;
+    height:300px;
 }
 
 .logo {
     text-align:center;
+    margin-left:5%;
 }
 
 .checkout-container a{
