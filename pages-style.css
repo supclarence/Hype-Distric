@@ -281,19 +281,13 @@ h1{
     color:black;
 }
 
-.map a {
-    color:black;
-    text-align:center;
-    font-size:30px;
-}
-
-.map img{
+.logo img{
     text-align:center;
     width:50%;
     height:500px;
 }
 
-.map {
+.logo {
     text-align:center;
 }
 
