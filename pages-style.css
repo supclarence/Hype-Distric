@@ -283,8 +283,8 @@ h1{
 }
 
 .member img {
-    width: 200px;
-    height: 250px;
+    width:auto;
+    height:auto;
 }
 
 .member a {
@@ -375,3 +375,4 @@ input, select {
     color:white;
     border:solid green;
 }
+
