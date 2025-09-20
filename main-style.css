@@ -126,7 +126,7 @@ nav a:hover {
 }
 
 .product{
-    background-color:grey;
+    background-color:rgb(77, 77, 77);
     border-radius:5px;
     box-shadow: 20px 10px 30px black;
     padding:0%;
@@ -320,6 +320,7 @@ footer {
     background-color:black;
     color:white;
 }
+
 
 
 
