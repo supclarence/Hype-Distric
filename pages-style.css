@@ -13,7 +13,7 @@ header{
     background-color:black;
     color:white;
     text-align:center;
-    font-family:Segoe Script;
+    font-family:Niagara Engraved;
     padding:9px;
     width:100vw;
     position:relative;
@@ -375,4 +375,5 @@ input, select {
     color:white;
     border:solid green;
 }
+
 
