@@ -185,7 +185,6 @@ nav a:hover {
 .text {
     text-align: center;
     font-size: 50px;
-    font-family:Arial Rounded MT Bold;
 }
 
 .body{
@@ -321,6 +320,7 @@ footer {
     background-color:black;
     color:white;
 }
+
 
 
 
