@@ -7,7 +7,7 @@ body{
 header h1{
     letter-spacing:5px;
     text-shadow:0px 10px 10px white;
-    font-size:7vw;
+    font-size:4vw;
 }
 
 header{
@@ -376,6 +376,7 @@ input, select {
     color:white;
     border:solid green;
 }
+
 
 
 
