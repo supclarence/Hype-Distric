@@ -14,7 +14,7 @@ header{
     color:white;
     text-align:center;
     font-family:Niagara Engraved;
-    padding:9px;
+    padding:10px;
     width:100vw;
     position:relative;
     overflow-x:hidden;
@@ -377,4 +377,5 @@ input, select {
     color:white;
     border:solid green;
 }
+
 
