@@ -1,12 +1,14 @@
-body{
-    background-color:rgb(255, 255, 255);
+body {
+    background-color:white;
     margin:0px;
-    overflow-x:hidden;
+    overflow-x: hidden;
+    width:100%;
 }
 
 header h1{
-    letter-spacing:5px;
+    letter-spacing:10px;
     text-shadow:0px 10px 10px white;
+    font-size:4vw;
 }
 
 header{
@@ -15,10 +17,8 @@ header{
     text-align:center;
     font-family:Niagara Engraved;
     padding:9px;
-    height:11.2vw;
-    width:100vw;
+    width:100%;
     position:relative;
-    overflow-x:hidden;
 }
 
 #log-in {
@@ -67,17 +67,9 @@ header{
     border-radius:20px;
 }
 
-#search {
-    width:20vw;
-    padding:10px;
-    position: absolute;
-    left:1%;
-    bottom:1vw;
-}
-
 
 nav {
-    background-color:rgb(112, 112, 112);
+    background-color:grey;
     margin-bottom:30px;
     padding:16px;
     position:sticky; 
@@ -86,72 +78,108 @@ nav {
     z-index: 1;
     font-size:10px;
     position:relative;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 #search {
-    width:20vw;
+    width:18%;
     padding:10px;
+    margin-right:90%;
 }
 
 nav a {
-    background-color:grey;
+    background-color:white;
     color:black;
     width:110px;
     text-align:center;
-    padding:4px;
+    padding:10px;
     text-decoration:none;
-    border-radius:20px;
+    border-radius:30px;
     font-size:15px;
     font-weight:bold;
     display:inline-block;
     margin-left:30px;
     margin-right:30px;
-    margin-bottom:1px;
-    margin-top:1px;
-    transition:all 0.6 ease;
-    font-family:Arial, Helvetica, sans-serif;
-    border:2px solid black;
+    margin-bottom:5px;
+    margin-top:5px;
+    transition-duration:0.4Ss;
 }
 
 nav a:hover {
     background-color:black;
     color:white;
 }
-.product{
-    background-color:grey;
-    border-radius:5px;
-    box-shadow: 20px 10px 30px black;
-    padding:1px;
-    max-height:1000px;
+/* Popup background */
+#popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background:  rgba(0, 0, 0, 0.612);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+/* Popup box */
+#popup-content {
+    background: #fff;
+    padding: 40px;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    animation: fadeIn 0.5s ease;
+    font-size:1.4vw;
+}
+
+#popup button {
+    margin-top: 15px;
+    padding: 14px 40px;
+    border: none;
+    background: #000000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+#popup button:hover {
+    background: #424446;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 .product-grid{
-    margin:20px;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap:70px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:90px;
     font-size:25px;
     text-align:center;
+    margin:10px;
 }
 
-.product img{
+.product img {
     margin-top:5px;
-    border:solid;
-    height:40%;
-    width:80%;
-    filter:brightness(1);
-    max-width:100%;
-    object-fit: cover;
+    border: solid;
+    height: 220px;
+    width: 200px;
+    filter: brightness(1);
 }
 
+.product{
+    background-color:rgb(77, 77, 77);
+    border-radius:5px;
+    box-shadow: 20px 10px 30px black;
+    padding:0%;
+    height:100%;
+}
 
 .product p {
-    margin:1%;
+    margin: 3px;
     line-height: 1.2;
     font-size: 18px;
     color:white;
@@ -162,6 +190,9 @@ nav a:hover {
     padding:10px;
     width:100%;
     cursor: pointer;
+    margin-top:10px;
+    margin-left:0;
+    margin-right:0;
     background-color:white;
     color:black;
     font-size:17px;
@@ -179,16 +210,16 @@ nav a:hover {
 }
 
 .product select{
-    width:99%;
+    width:50px;
     padding:5px;
-    margin-bottom:2px;
+    margin-bottom:10px;
     border-radius:5px;
     border:1px black;
     font-size:15px;
 }
 
 .product input {
-    width:92%;
+    width:40px;
     padding:8px;
     margin-bottom:10px;
     border-radius:5px;
@@ -198,7 +229,7 @@ nav a:hover {
 
 .text {
     text-align: center;
-    font-size:20px;
+    font-size: 50px;
 }
 
 .body{
@@ -238,6 +269,7 @@ nav a:hover {
     background-color: black;
     color: white;
     box-shadow:0px 5px 15px black;
+    text-shadow:0px 10px 10px white;
 }
 
 footer {
@@ -249,21 +281,6 @@ footer {
     bottom:0px;
 }
 
-.signup a{
-    text-decoration:none;
-}
-
-.signup h3{
-    color:white;
-    font-size:20px;
-    letter-spacing:5px;
-    margin:0%;
-    text-align: center;
-    border-radius:10px;
-    padding:2%;
-    width:97%;
-    background-color:black;
-}
 
 .signup{
     padding:20px;
@@ -348,4 +365,3 @@ footer {
     background-color:black;
     color:white;
 }
-
