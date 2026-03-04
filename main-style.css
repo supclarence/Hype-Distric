@@ -133,7 +133,7 @@ nav a:hover {
 /* Popup box */
 #popup-content {
     background: #fff;
-    padding: 40px;
+    padding: 30px;
     max-width: 400px;
     text-align: center;
     border-radius: 10px;
@@ -145,7 +145,7 @@ nav a:hover {
 
 #popup button {
     margin-top: 15px;
-    padding: 14px 40px;
+    padding: 14% 40%;
     border: none;
     background: #000000;
     color: white;
@@ -375,5 +375,6 @@ footer {
     background-color:black;
     color:white;
 }
+
 
 
