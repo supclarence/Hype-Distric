@@ -269,28 +269,102 @@ h1{
     font-size:20px;
 }
 
+.mission{
+    margin: auto;
+    background-color: #f4f4f4;
+    padding:15px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 5px -10px 10px black;
+    font-size:20px;
+}
+
+
 .team {
-    text-align:center;
+    display: flex;           /* Make it flex */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically if needed */
+    flex-wrap: wrap;         /* Wrap if multiple members */
+    gap: 20px;               /* Optional spacing between cards */
+    margin: 40px 0;          /* Optional spacing from other sections */
 }
 
 .member {
-    color:white;
-    background-color:grey;
-    display:inline-block;
-    margin:30px;
-    padding:15px;
-    border:1px black;
-    width:200px;
-    border-radius:5px;
+    background: linear-gradient(145deg, #ffffff, #e0e0e0);
+    width: 50vw;
+    padding:10px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #030303, 0 0 40px #4e4e4e;
+    color: #000000;
+    transition: 0.3s all ease;
+    position: relative;
+    text-align: center;
+    /* Remove margin here if using gap */
+    /* margin: 30px; */
+}
+
+.member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #696969, 0 0 60px #a1a1a1;
 }
 
 .member img {
-    width:200px;
-    height:250px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #764ba2;
+    margin-bottom: 15px;
 }
 
-.member a {
-    color:black;
+.member h2 {
+    margin: 10px 0 5px;
+    font-family:Calibri;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: rgb(53, 49, 49);
+}
+
+.role {
+    font-size: 14px;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.status {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-links {
+    margin-top: 15px;
+    text-align:center;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #000000;
+    background: #ffffff;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s all ease;
+    font-size: 14px;
+}
+
+.social-links a:hover {
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.social-links i {
+    margin-right: 8px;
 }
 
 .logo img{
@@ -377,5 +451,6 @@ input, select {
     color:white;
     border:solid green;
 }
+
 
 
