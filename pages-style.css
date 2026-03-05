@@ -4,71 +4,77 @@ body{
     overflow-x:hidden;
 }
 
-header h1{
-    letter-spacing:5px;
-    text-shadow:0px 10px 10px white;
-}
-
 header{
     background-color:black;
     color:white;
-    text-align:center;
     font-family:Niagara Engraved;
-    padding:9px;
-    width:100vw;
-    position:relative;
-    overflow-x:hidden;
+    padding:15px;
+    width:100%;
+    box-sizing:border-box;
 }
 
-#log-in {
-    color:white;
-    padding:5px;
-    position:absolute; 
-    right:130px;
+/* Logo */
+header h1{
     text-align:center;
-    bottom:2%;
+    letter-spacing:6px;
+    font-size:50px;
+    margin:5px 0px 15px 0px;
+    text-shadow:0px 10px 10px white;
+}
+
+/* header layout */
+.header-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* search */
+#search{
+    width:230px;
+    padding:10px;
+    border-radius:20px;
+    border:none;
+}
+
+/* buttons container */
+.header-buttons{
+    display:flex;
+    gap:15px;
+}
+
+/* buttons */
+#home,
+#log-in{
+    color:white;
+    text-decoration:none;
     font-family:Arial, Helvetica, sans-serif;
-    text-decoration:none;
-    width:70px;
-    cursor:pointer;
-    transition:font-size 0.10s ease;
-    transition:transform 0.5s ease
+    padding:6px 12px;
+    border-radius:20px;
+    transition:all 0.3s ease;
 }
 
-#home {
-    color:white;
-    padding:5px;
-    position: absolute; 
-    right:45px;
-    text-align:center;
-    bottom:2%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration:none;
-    width:70px;
-    cursor:pointer;
-    transition:font-size 0.10s ease;
-    transition:transform 0.5s ease
-}
-
+/* hover */
+#home:hover,
 #log-in:hover{
     border:solid white;
-    font-size:16px;
-    transform:scale(1.1);
-    box-shadow:0px 0px 100px white;
-    border-radius:20px;
+    transform:scale(1.05);
+    box-shadow:0px 0px 40px white;
 }
 
-#home:hover{
-    border:solid white;
-    font-size:16px;
-    transform:scale(1.1);
-    box-shadow:0px 0px 100px white;
-    border-radius:20px;
+/* mobile fix */
+@media(max-width:600px){
+
+.header-bar{
+    flex-direction:column;
+    gap:10px;
 }
 
-#search {
-    width:20vw;
-    padding:10px;
+#search{
+    width:80%;
+}
+
 }
 
 nav a{
@@ -451,6 +457,7 @@ input, select {
     color:white;
     border:solid green;
 }
+
 
 
 
