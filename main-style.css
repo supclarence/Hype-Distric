@@ -165,33 +165,40 @@ nav a:hover {
     to { opacity: 1; transform: scale(1); }
 }
 
-.product-grid{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap:90px;
-    font-size:25px;
-    text-align:center;
-    margin:10px;
-}
-
-.product img {
-    margin-top:5px;
-    border: solid;
-    height: 220px;
-    width: 200px;
-    filter: brightness(1);
-}
-
 .product{
-    background-color:rgb(77, 77, 77);
+    background-color:grey;
     border-radius:5px;
     box-shadow: 20px 10px 30px black;
-    padding:0%;
-    height:100%;
+    padding:1px;
+    max-height:1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.product-grid{
+    margin:20px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap:70px;
+    font-size:25px;
+    text-align:center;
+}
+
+.product img{
+    margin-top:5px;
+    border:solid;
+    height:40%;
+    width:80%;
+    filter:brightness(1);
+    max-width:100%;
+    object-fit: cover;
+}
+
+
 .product p {
-    margin: 3px;
+    margin:1%;
     line-height: 1.2;
     font-size: 18px;
     color:white;
@@ -202,9 +209,6 @@ nav a:hover {
     padding:10px;
     width:100%;
     cursor: pointer;
-    margin-top:10px;
-    margin-left:0;
-    margin-right:0;
     background-color:white;
     color:black;
     font-size:17px;
@@ -222,16 +226,16 @@ nav a:hover {
 }
 
 .product select{
-    width:50px;
+    width:99%;
     padding:5px;
-    margin-bottom:10px;
+    margin-bottom:2px;
     border-radius:5px;
     border:1px black;
     font-size:15px;
 }
 
 .product input {
-    width:40px;
+    width:92%;
     padding:8px;
     margin-bottom:10px;
     border-radius:5px;
