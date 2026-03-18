@@ -8,7 +8,7 @@ header{
     background-color:black;
     color:white;
     font-family:Niagara Engraved;
-    padding:15px;
+    padding:4px;
     width:100%;
     box-sizing:border-box;
 }
@@ -166,15 +166,14 @@ nav a:hover {
 }
 
 .product{
-    background-color:grey;
+    background-color:transparent;
     border-radius:5px;
-    box-shadow: 20px 10px 30px black;
     padding:1px;
     max-height:1000px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items:flex-start;
 }
 
 .product-grid{
@@ -184,16 +183,16 @@ nav a:hover {
     gap:70px;
     font-size:25px;
     text-align:center;
+
 }
 
 .product img{
-    margin-top:5px;
-    border:solid;
+    align-self: center;
     height:40%;
     width:80%;
     filter:brightness(1);
     max-width:100%;
-    object-fit: cover;
+    object-fit:contain;
 }
 
 
@@ -201,7 +200,9 @@ nav a:hover {
     margin:1%;
     line-height: 1.2;
     font-size: 18px;
-    color:white;
+    color:black;
+    text-align:left;
+    font-size:small;
 }
 
 .product button{
@@ -222,7 +223,7 @@ nav a:hover {
 
 .product label{
     font-size:15px;
-    color:white;
+    color:black;
 }
 
 .product select{
