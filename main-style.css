@@ -6,20 +6,17 @@ body{
 
 header{
     background-color:black;
+    text-align: center;
     color:white;
     font-family:Niagara Engraved;
     padding:4px;
     width:100%;
-    box-sizing:border-box;
 }
 
 /* Logo */
-header h1{
-    text-align:center;
-    letter-spacing:6px;
-    font-size:50px;
-    margin:5px 0px 15px 0px;
-    text-shadow:0px 10px 10px white;
+header img{
+    height:10%;
+    width:18%;
 }
 
 /* header layout */
@@ -30,13 +27,6 @@ header h1{
     flex-wrap:wrap;
 }
 
-/* search */
-#search{
-    width:230px;
-    padding:10px;
-    border-radius:20px;
-    border:none;
-}
 
 /* buttons container */
 .header-buttons{
@@ -63,56 +53,105 @@ header h1{
     box-shadow:0px 0px 40px white;
 }
 
-/* mobile fix */
-@media(max-width:600px){
+
+@media(max-width:1500px){
 
 .header-bar{
     flex-direction:column;
     gap:10px;
 }
 
-#search{
-    width:80%;
+#overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter:blur(10px);
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s ease;
+    z-index:500;
 }
 
-}
-nav {
-    background-color:rgb(112, 112, 112);
-    margin-bottom:30px;
-    padding:16px;
-    position:sticky; 
-    top:0px;
-    width:100vw;
-    z-index: 1;
-    font-size:10px;
-    position:relative;
-    font-family:Arial, Helvetica, sans-serif;
+#overlay.active{
+    opacity:1;
+    visibility:visible;
 }
 
-#search {
-    width:20vw;
-    padding:10px;
+
+#nav-btn{
+    position:absolute;
+    left:15px;
+    top:15px;
+    font-size:25px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
 }
 
-nav a {
-    background-color:grey;
-    color:black;
-    width:110px;
-    text-align:center;
-    padding:4px;
+#close-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    font-size:22px;
+    background:none;
+    border:none;
+    color:white;
+    cursor:pointer;
+}
+
+
+#sidebar{
+    position:fixed;
+    top:0;
+    left:-250px; 
+    width:250px;
+    height:100%;
+    background:black;
+    padding-top:80px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    transition:0.3s ease;
+    z-index:999;
+}
+
+#sidebar.active{
+    left:0;
+}
+
+#sidebar a{
+    color:white;
     text-decoration:none;
-    border-radius:20px;
-    font-size:15px;
-    font-weight:bold;
-    display:inline-block;
-    margin-left:30px;
-    margin-right:30px;
-    margin-bottom:1px;
-    margin-top:1px;
-    transition:all 0.6 ease;
-    font-family:Arial, Helvetica, sans-serif;
-    border:2px solid black;
+    padding:12px;
+    font-family:Arial;
+    border-bottom:1px solid grey;
+    transition:0.3s;
+    margin: 0%;
 }
+
+#sidebar-search{
+    padding:15px;
+}
+
+#sidebar-search input{
+    width:100%;
+    padding:10px;
+    border-radius:20px;
+    border:none;
+    outline:none;
+}
+
+#sidebar a:hover{
+    background:white;
+    color:black;
+}
+
+}
+
 
 nav a:hover {
     background-color:black;
@@ -382,7 +421,6 @@ footer {
     background-color:black;
     color:white;
 }
-
 
 
 
