@@ -1,79 +1,94 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hype District</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" href="android-chrome-192x192.png" sizes="192x192" type="image/png">
-    <link rel="icon" href="android-chrome-512x512.png" sizes="512x512" type="image/png">
-    <link rel="stylesheet" href="pages-style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Hype District</title>
+<link rel="stylesheet" href="pages-style.css">
 </head>
+
 <body>
-<header>
-    <h1>Hype District</h1>
 
-    <div class="header-bar">
-        <form>
-            <input type="search" id="search" placeholder="Search..">
+    <header>
+        <img src="banner.png">
+
+            <div class="header-buttons">
+                <a href="index.html" id="home">HOME</a>
+                <a href="login.html" id="log-in">LOG IN</a>
+                <button id="nav-btn" onclick="toggleMenu()">☰</button>
+            </div>
+    </header>
+    
+    <div id="overlay" onclick="toggleMenu()"></div>
+
+    <nav id="sidebar">
+        <button id="close-btn" onclick="toggleMenu()">✖</button>
+        <form id="sidebar-search">
+            <input type="search" placeholder="Search...">
         </form>
-
-        <div class="header-buttons">
-            <a href="index.html" id="home">HOME</a>
-            <a href="login.html" id="log-in">LOG IN</a>
-        </div>
-    </div>
-</header>
-    <nav>
-        <center>
             <a href="main.html">Main</a>
             <a href="mens page.html">Men's Wear</a>
             <a href="women page.html">Women's Wear</a>
             <a href="accessories.html">Accessories</a>
             <a href="cart.html">Cart</a>
-            <a href="about us.html">about us</a>
-        </center>        
+            <a href="about us.html">about us</a>       
     </nav>
-    <div class="us">
-        <h1>🌟 Hype District?</h1>
-        <p>Hype District is a Filipino-owned streetwear brand built by two passionate individuals who share a love for fashion and culture. Our brand is dedicated to creating stylish, high-quality, and affordable clothing that represents the street lifestyle while competing on an international level</p>
+
+<!-- HERO -->
+<section class="about-hero">
+    <h1>HYPE DISTRICT</h1>
+    <p>Built from the streets. Designed for the culture.</p>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section">
+    <div class="about-card">
+        <h2>Who We Are</h2>
+        <p>
+            Hype District is a Filipino streetwear brand created by passionate creators who believe in style, culture, and identity.
+            We build pieces that represent real street energy while staying affordable and high quality.
+        </p>
     </div>
-    <div class="vision">
-        <h1>👁️ Our Vision</h1>
-        <p>To become the leading streetwear brand in the Philippines and a recognized competitor in the international fashion market. We envision a world where Filipino streetwear is known for its authenticity, quality, and cultural impact.</p>
-</div>
-    <div class="mission">
-        <h1>🎯 Our Mission</h1>
-        <p>Make Sales – Establish Hype Distric as a profitable brand in the local and global market</p>
-        <p>Compete with International Brands – Elevate the quality and reputation of Filipino streetwear to match global industry standards</p>
-        <p>Promote & Support Local Brands – Build a strong community that highlights and uplifts local designers, artists, and creatives</p>
-</div>
-<div class="team">
-            <div class="member">
-                <h2>Conde, John Clarence</h2>
-                <p class="role"> Web Programmer & Designer</p>
-                <p class="status">Student</p>
-        
-                <div class="about-me">
-                    <p>hello i'm senior high school student my strand is TVL-Computer Programmer, i'm passionate programmer and designer focused on creating website, i enjoy coding, learn new program and i love problem solving.</p>
-                </div>
-        
-                <div class="social-links">
-                    <a href="j.clarenceconde@gmail.com"><i class="fas fa-envelope"></i>Email</a>
-                    <a href="https://www.instagram.com/whossjohn_?" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-                    <a href="https://www.facebook.com/share/1EATntt56y/" target="_blank"><i class="fab fa-facebook"></i>Facebook</a>
-                </div>
-            </div>
+
+    <div class="about-card">
+        <h2>Vision</h2>
+        <p>
+            To become one of the top streetwear brands in the Philippines and compete globally with originality and authenticity.
+        </p>
+    </div>
+
+    <div class="about-card">
+        <h2>Mission</h2>
+        <p>
+            • Build a profitable brand<br>
+            • Compete internationally<br>
+            • Support local creatives
+        </p>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="team-section">
+    <h2>Meet The Creator</h2>
+
+    <div class="team-card">
+        <h3>John Clarence Conde</h3>
+        <p class="role">Web Developer & Designer</p>
+
+        <p class="bio">
+            Senior high school student specializing in programming.
+            Passionate about building websites, solving problems, and creating modern digital experiences.
+        </p>
+
+        <div class="socials">
+            <a href="mailto:j.clarenceconde@gmail.com">Email</a>
+            <a href="https://www.instagram.com/whossjohn_?" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/share/1EATntt56y/" target="_blank">Facebook</a>
         </div>
+    </div>
+</section>
+
+<script src="website.js"></script>
+
 </body>
 </html>
-
-
-
-
-
-
-
