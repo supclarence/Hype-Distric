@@ -341,7 +341,7 @@ footer {
 .signup{
     padding:20px;
     width:70%;
-    max-width:400%;
+    max-width:400px;
     border:solid black;
     background-color:black;
     margin-top:5%;
